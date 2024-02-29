@@ -18,7 +18,7 @@
   "Parameters": {
     "Bool": [
       {
-        "Name": "MapRotation",
+        "Name": "Dusty 2",
         "DisplayName": "GmParams/MapRotation",
         "Default": true
       },
