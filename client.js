@@ -32,7 +32,7 @@ blue = GameMode.Parameters.GetBool("BlueTeam");
 if (red || !red && !blue) {
 	Teams.Get("ПОСТРОЙЩИКИ").Spawns.SpawnPointsGroups.Add(2);
 }
-if (blue || !red && !blue) {
+if (blue || ! && !blue) {
 	Teams.Add("Blue", "Teams/Blue", { b: 1 });
 	Teams.Get("Blue").Spawns.SpawnPointsGroups.Add(1);
 	if(GameMode.Parameters.GetBool("BlueHasNothing")){
@@ -44,7 +44,7 @@ if (blue || !red && !blue) {
 		Team.Get("Blue").Inventory.BuildInfinity.Value = true;
 		Teams.Get("Blue").Inventory.Build.Value = true;
 
-		Ui.Hint.Value ="УДАЧНОЙ СТРОЙКИ!";
+		
 	}
 }
 
@@ -69,4 +69,4 @@ inventory.BuildInfinity.Value = true;
 Build.GetContext().BlocksSet.Value = BuildBlocksSet.AllClear;
 
 // ������������ �����
-Spawns.GetContext().RespawnTime.Value = 0;
+Spawns.GetContext().RespawnTime.Value = 5;
