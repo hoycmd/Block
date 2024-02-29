@@ -28,10 +28,8 @@ Build.GetContext().ChangeSpawnsEnable.Value = true;
 // ��������� ����
 Properties.GetContext().GameModeName.Value = "GameModes/Peace";
 // ������� �������
-red = GameMode.Parameters.GetBool("RedTeam");
 blue = GameMode.Parameters.GetBool("BlueTeam");
 if (red || !red && !blue) {
-	Teams.Add("ПОСТРОЙЩИКИ", "Teams/Red", { r: 1 });
 	Teams.Get("ПОСТРОЙЩИКИ").Spawns.SpawnPointsGroups.Add(2);
 }
 if (blue || !red && !blue) {
@@ -45,6 +43,9 @@ if (blue || !red && !blue) {
 		Teams.Get("Blue").Inventory.Explosive.Value = false;
 		Team.Get("Blue").Inventory.BuildInfinity.Value = true;
 		Teams.Get("Blue").Inventory.Build.Value = true;
+
+		//��������� �� ����
+		Ui.Hint.Value ="УДАЧНОЙ СТРОЙКИ!";
 	}
 }
 
