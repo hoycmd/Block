@@ -44,7 +44,6 @@ if (blue || !red && !blue) {
 		Team.Get("Blue").Inventory.BuildInfinity.Value = true;
 		Teams.Get("Blue").Inventory.Build.Value = true;
 
-		//��������� �� ����
 		Ui.Hint.Value ="УДАЧНОЙ СТРОЙКИ!";
 	}
 }
